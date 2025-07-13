@@ -30,7 +30,7 @@ public class TestDemoQAHW {
         $("#gender-radio-2").doubleClick();
         $("#userNumber").setValue("9219219211");
         $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").selectOption("July");
+        $(".react-datepicker__month-select").selectOption("July"); //.элемент с классом, выпадающий список, выбор опции с тексто июль
         $(".react-datepicker__year-select").selectOption("2002");
         $(".react-datepicker__day--010:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue("Math").pressEnter();
