@@ -1,6 +1,7 @@
 package github;
 
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
 import com.codeborne.selenide.Condition;
@@ -17,6 +18,6 @@ public class SelenideRepositorySearch {
         var results = $$("[data-testid='results-list'] > div");
         results.first().$("a").click();
         // Проверяем, что перешли на страницу Selenide
-        $("#repository-container-header").shouldHave(Condition.text("selenide/selenide"));
+        $("#repository-container-header").shouldHave(text("selenide / selenide"));
     }
 }
