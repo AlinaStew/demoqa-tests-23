@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestDemoQAHW {
+
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
@@ -21,6 +22,7 @@ public class TestDemoQAHW {
         Configuration.holdBrowserOpen = true;
         Configuration.timeout = 5000; // default 4000
     }
+    
     @Test
     void fillFormTest() {
         open("/automation-practice-form");
